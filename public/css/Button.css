@@ -1,7 +1,28 @@
 .button {
+    position: relative;
     background-color: #1a1925;
     color: #FFF;
     padding: 5px 5px;
     border-radius: 5px;
     border: none;
+    overflow: hidden;
+}
+
+.ripple {
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    background-color: #ffffff7b;
+    animation: ripple 0.5s infinite;
+}
+
+@keyframes ripple {
+    from {
+        height: 0px;
+        width: 0px;
+    }
+    to {
+        height: 500px;
+        width: 500px;
+    }
 }
