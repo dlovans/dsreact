@@ -1,7 +1,9 @@
+import '../../public/css/Button.css'
+
 export default function Button() {
     return (
         <>
-            <button>Contact Me</button>
+            <button className="button">Contact Me</button>
         </>
     )
 }
